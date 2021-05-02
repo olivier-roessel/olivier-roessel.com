@@ -1,0 +1,168 @@
+@import '~src/assets/css/variables';
+
+.row-social,
+.row-liveroom {
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 20px 0px;
+    padding: 0px;
+    list-style: none;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    cursor: grab;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &:active {
+        cursor: grabbing;
+        user-select: none;
+    }
+
+    &.no-scroll {
+        cursor: default;
+
+        .slider-arrow {
+            display: none;
+        }
+    }
+
+    &.arrow-end {
+        .slider-arrow {
+            opacity: 0.4;
+            cursor: default;
+        }
+    }
+
+    .slider-arrow {
+        position: sticky;
+        top: calc(50% - 30px);
+        right: 0px;
+        display: block;
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+        object-position: center;
+        cursor: pointer;
+        transition: all 0.2s;
+        z-index: 1;
+    }
+
+    li {
+        display: flex;
+        flex-shrink: 0;
+        padding: 10px;
+        width: 250px;
+        min-width: 250px;
+        height: 300px;
+        box-sizing: content-box;
+
+        &:first-child {
+            padding-left: 0px;
+        }
+
+        &:last-child {
+            padding-right: 0px;
+        }
+    }
+
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        color: $white;
+        transition: all 0.2s;
+        overflow: hidden;
+        z-index: 1;
+
+        h3 {
+            margin: 0px 0px 10px;
+            font-size: 20px;
+        }
+
+        p {
+            margin: 10px 0px 20px;
+            font-size: 13px;
+            line-height: 18px;
+        }
+
+        &.instagram {
+            background: linear-gradient(180deg, #FDA948, #F66748, #EC3653, #C13A9C);
+        }
+
+        &.twitch {
+            background-color: #9146FF;
+        }
+
+        &.youtube {
+            background-color: #282828;
+        }
+
+        &.twitter {
+            background-color: #1D9BF0;
+        }
+
+        &.linkedin {
+            background-color: #2867B2;
+        }
+
+        &.facebook {
+            background-color: #1D9BF0;
+        }
+
+        .cover {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            z-index: -1;
+        }
+
+        .social-icon {
+            height: 60px;
+        }
+
+        .text-group {
+            display: block;
+            width: 100%;
+        }
+
+        .btn {
+            display: flex;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.row-liveroom {
+    li {
+        height: 390px;
+    }
+
+    .card {
+        justify-content: flex-end;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, $black-transparent, $black);
+            z-index: -1;
+        }
+    }
+}
