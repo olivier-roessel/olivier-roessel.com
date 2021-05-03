@@ -30,7 +30,7 @@ import { FooterComponent } from './footer/footer.component';
       { path: 'contact', component: ContactComponent },
       { path: 'cv', component: CvComponent },
       { path: '**', redirectTo: '', pathMatch: 'full' }
-    ])
+    ], { scrollPositionRestoration: 'enabled' })
   ],
   providers: [],
   bootstrap: [AppComponent]

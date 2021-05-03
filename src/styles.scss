@@ -17,7 +17,7 @@ body {
     padding-top: 180px;
 
     @media (max-width: 575px) {
-        padding-top: 140px;
+        padding-top: 220px;
         padding-bottom: 80px;
     }
 }
@@ -102,6 +102,11 @@ body {
     i {
         margin-right: 5px;
     }
+
+    @media (max-width: 575px) {
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 img {
@@ -128,6 +133,11 @@ h2 {
     .icon svg {
         height: 60px;
         margin-right: 12px;
+    }
+
+    @media (max-width: 575px) {
+        margin-bottom: 10px;
+        text-align: center;
     }
 }
 
@@ -268,7 +278,7 @@ iframe {
     border: none;
 
     @media (max-width: 575px) {
-        height: calc(100vh - 220px);
+        height: calc(100vh - 300px);
     }
 }
 

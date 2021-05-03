@@ -166,7 +166,7 @@
         }
     }
 
-    @media (max-width: 767px) {
+    @media (min-width: 576px) and (max-width: 767px) {
         .profile {
             display: none;
         }
@@ -174,10 +174,25 @@
 
     @media (max-width: 575px) {
         position: absolute;
-        height: 140px;
+        height: 190px;
 
         .menu {
             display: none;
+        }
+
+        .container>.row {
+            margin-bottom: 50px;
+        }
+
+        .col.no-grow {
+            position: initial;
+        }
+
+        .profile {
+            display: block;
+            position: absolute;
+            left: calc(50% - 60px);
+            bottom: -40px;
         }
     }
 }
