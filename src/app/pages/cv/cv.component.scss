@@ -1,3 +1,5 @@
-iframe {
-    margin: 0px 0px -6px;
+@media (min-width: 576px) {
+    iframe {
+        margin: 0px 0px -6px;
+    }
 }

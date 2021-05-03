@@ -278,7 +278,12 @@ iframe {
     border: none;
 
     @media (max-width: 575px) {
-        height: calc(100vh - 300px);
+        width: calc(100% - 100px);
+        height: calc(100vh - 400px);
+        margin: 50px;
+        border-radius: 10px;
+        background-color: $grey-light;
+        overflow: hidden;
     }
 }
 
