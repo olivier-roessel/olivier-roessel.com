@@ -114,7 +114,7 @@ ul {
 }
 
 .row-buttons {
-    li {
+    .col {
         .btn {
             width: 100%;
         }
@@ -160,20 +160,32 @@ a {
         line-height: 16px;
     }
 
+    &.blue {
+        background: linear-gradient(90deg, $green, $blue, $blue);
+        background-size: 200% 100%;
+        background-position: 100% 0%;
+    }
+
     &.green {
-        background: linear-gradient(90deg, $black, $green, $green);
+        background: linear-gradient(90deg, $blue, $green, $green);
         background-size: 200% 100%;
         background-position: 100% 0%;
     }
 
     &.red {
-        background: linear-gradient(90deg, $black, $red, $red);
+        background: linear-gradient(90deg, $blue, $red, $red);
         background-size: 200% 100%;
         background-position: 100% 0%;
     }
 
     &.purple {
-        background: linear-gradient(90deg, $black, $purple, $purple);
+        background: linear-gradient(90deg, $blue, $purple, $purple);
+        background-size: 200% 100%;
+        background-position: 100% 0%;
+    }
+
+    &.messenger {
+        background: linear-gradient(90deg, $blue, #0a7cff 50%, #0a7cff 50%, #a10eeb, #ff5297, #ff6c5c);
         background-size: 200% 100%;
         background-position: 100% 0%;
     }
@@ -255,8 +267,8 @@ iframe {
     height: calc(100vh - 180px);
     border: none;
 
-    @media (min-width: 575px) {
-        max-width: 540px;
+    @media (max-width: 575px) {
+        height: calc(100vh - 220px);
     }
 }
 

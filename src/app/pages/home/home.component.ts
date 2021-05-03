@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -13,7 +14,9 @@ export class HomeComponent implements AfterViewInit {
   pos2 = { top: 0, left: 0, x: 0, y: 0 };
   active2 = false;
 
-  constructor() { }
+  constructor(private titleService: Title) {
+    this.titleService.setTitle("Olivier Roessel");
+  }
 
   ngAfterViewInit(): void {
     this.detectNoScroll([this.el1, this.el2]);
