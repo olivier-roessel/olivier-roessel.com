@@ -49,8 +49,8 @@
 
 @font-face {
     font-family: "Feather";
-    src: url("../fonts/feather.ttf?lstajl") format("truetype"),
-        url("../fonts/feather.woff?lstajl") format("woff");
+    src: url("../fonts/Feather.woff2") format("woff2"),
+        url("../fonts/Feather.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -58,7 +58,6 @@
 
 i {
     font-family: "Feather" !important;
-    speak: never;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
