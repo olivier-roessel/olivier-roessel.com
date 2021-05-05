@@ -2,72 +2,55 @@
 
 @font-face {
     font-family: "Tomica";
-    src: url("../fonts/Tomica-Black.eot");
-    src: url("../fonts/Tomica-Black.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/Tomica-Black.woff2") format("woff2"),
-        url("../fonts/Tomica-Black.woff") format("woff"),
-        url("../fonts/Tomica-Black.ttf") format("truetype"),
-        url("../fonts/Tomica-Black.svg#Tomica-Black") format("svg");
+    src: url("../fonts/Tomica-Black.woff2") format("woff2"),
+        url("../fonts/Tomica-Black.woff") format("woff");
     font-weight: 900;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Tomica";
-    src: url("../fonts/Tomica-Bold.eot");
-    src: url("../fonts/Tomica-Bold.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/Tomica-Bold.woff2") format("woff2"),
-        url("../fonts/Tomica-Bold.woff") format("woff"),
-        url("../fonts/Tomica-Bold.ttf") format("truetype"),
-        url("../fonts/Tomica-Bold.svg#Tomica-Bold") format("svg");
+    src: url("../fonts/Tomica-Bold.woff2") format("woff2"),
+        url("../fonts/Tomica-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Tomica";
-    src: url("../fonts/Tomica-Light.eot");
-    src: url("../fonts/Tomica-Light.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/Tomica-Light.woff2") format("woff2"),
-        url("../fonts/Tomica-Light.woff") format("woff"),
-        url("../fonts/Tomica-Light.ttf") format("truetype"),
-        url("../fonts/Tomica-Light.svg#Tomica-Light") format("svg");
+    src: url("../fonts/Tomica-Light.woff2") format("woff2"),
+        url("../fonts/Tomica-Light.woff") format("woff");
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Tomica";
-    src: url("../fonts/Tomica.eot");
-    src: url("../fonts/Tomica.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/Tomica.woff2") format("woff2"),
-        url("../fonts/Tomica.woff") format("woff"),
-        url("../fonts/Tomica.ttf") format("truetype"),
-        url("../fonts/Tomica.svg#Tomica") format("svg");
+    src: url("../fonts/Tomica.woff2") format("woff2"),
+        url("../fonts/Tomica.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Tomica";
-    src: url("../fonts/Tomica-Thin.eot");
-    src: url("../fonts/Tomica-Thin.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/Tomica-Thin.woff2") format("woff2"),
-        url("../fonts/Tomica-Thin.woff") format("woff"),
-        url("../fonts/Tomica-Thin.ttf") format("truetype"),
-        url("../fonts/Tomica-Thin.svg#Tomica-Thin") format("svg");
+    src: url("../fonts/Tomica-Thin.woff2") format("woff2"),
+        url("../fonts/Tomica-Thin.woff") format("woff");
     font-weight: 100;
     font-style: normal;
+    font-display: swap;
 }
 
 /* Icons */
 
 @font-face {
     font-family: "Feather";
-    src:
-        url("../fonts/feather.ttf?lstajl") format("truetype"),
-        url("../fonts/feather.woff?lstajl") format("woff"),
-        url("../fonts/feather.svg?lstajl#feather") format("svg");
+    src: url("../fonts/feather.ttf?lstajl") format("truetype"),
+        url("../fonts/feather.woff?lstajl") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: block;
