@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,9 @@ export class AppComponent {
   title = 'Olivier Roessel';
 
   constructor() {
-    this.addClarity();
+    if (environment.production) {
+      this.addClarity();
+    }
   }
 
   addClarity() {
