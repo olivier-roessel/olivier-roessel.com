@@ -2,8 +2,8 @@
 
 @font-face {
     font-family: "Tomica";
-    src: url("../fonts/Tomica-Black.woff2") format("woff2"),
-        url("../fonts/Tomica-Black.woff") format("woff");
+    src: url("/assets/fonts/Tomica-Black.woff2") format("woff2"),
+        url("/assets/fonts/Tomica-Black.woff") format("woff");
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -11,8 +11,8 @@
 
 @font-face {
     font-family: "Tomica";
-    src: url("../fonts/Tomica-Bold.woff2") format("woff2"),
-        url("../fonts/Tomica-Bold.woff") format("woff");
+    src: url("/assets/fonts/Tomica-Bold.woff2") format("woff2"),
+        url("/assets/fonts/Tomica-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -20,8 +20,8 @@
 
 @font-face {
     font-family: "Tomica";
-    src: url("../fonts/Tomica-Light.woff2") format("woff2"),
-        url("../fonts/Tomica-Light.woff") format("woff");
+    src: url("/assets/fonts/Tomica-Light.woff2") format("woff2"),
+        url("/assets/fonts/Tomica-Light.woff") format("woff");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -29,8 +29,8 @@
 
 @font-face {
     font-family: "Tomica";
-    src: url("../fonts/Tomica.woff2") format("woff2"),
-        url("../fonts/Tomica.woff") format("woff");
+    src: url("/assets/fonts/Tomica.woff2") format("woff2"),
+        url("/assets/fonts/Tomica.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -38,8 +38,8 @@
 
 @font-face {
     font-family: "Tomica";
-    src: url("../fonts/Tomica-Thin.woff2") format("woff2"),
-        url("../fonts/Tomica-Thin.woff") format("woff");
+    src: url("/assets/fonts/Tomica-Thin.woff2") format("woff2"),
+        url("/assets/fonts/Tomica-Thin.woff") format("woff");
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -49,8 +49,8 @@
 
 @font-face {
     font-family: "Feather";
-    src: url("../fonts/Feather.woff2") format("woff2"),
-        url("../fonts/Feather.woff") format("woff");
+    src: url("/assets/fonts/Feather.woff2") format("woff2"),
+        url("/assets/fonts/Feather.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: block;
