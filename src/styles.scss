@@ -158,9 +158,7 @@ a {
     border-radius: 10px;
     font-size: 16px;
     line-height: 16px;
-    background: linear-gradient(90deg, $black, $blue, $blue);
-    background-size: 200% 100%;
-    background-position: 100% 0%;
+    background: $blue;
     color: $white;
     transition: all 0.2s;
     user-select: none;
@@ -171,38 +169,53 @@ a {
     }
 
     &.blue {
-        background: linear-gradient(90deg, $green, $blue, $blue);
-        background-size: 200% 100%;
-        background-position: 100% 0%;
+        background: $blue;
+
+        &:hover,
+        &:focus {
+            background: darken($blue, 10);
+        }
     }
 
     &.green {
-        background: linear-gradient(90deg, $blue, $green, $green);
-        background-size: 200% 100%;
-        background-position: 100% 0%;
+        background: $green;
+
+        &:hover,
+        &:focus {
+            background: darken($green, 10);
+        }
     }
 
     &.red {
-        background: linear-gradient(90deg, $blue, $red, $red);
-        background-size: 200% 100%;
-        background-position: 100% 0%;
+        background: $red;
+
+        &:hover,
+        &:focus {
+            background: darken($red, 10);
+        }
     }
 
     &.purple {
-        background: linear-gradient(90deg, $blue, $purple, $purple);
-        background-size: 200% 100%;
-        background-position: 100% 0%;
+        background: $purple;
+
+        &:hover,
+        &:focus {
+            background: darken($purple, 10);
+        }
     }
 
     &.messenger {
-        background: linear-gradient(90deg, $blue, #0a7cff 50%, #0a7cff 50%, #a10eeb, #ff5297, #ff6c5c);
-        background-size: 200% 100%;
-        background-position: 100% 0%;
+        background: linear-gradient(90deg, #0a7cff, #a10eeb, #ff5297, #ff6c5c);
+
+        &:hover,
+        &:focus {
+            background: linear-gradient(90deg, darken(#0a7cff, 10), darken(#a10eeb, 10), darken(#ff5297, 10), darken(#ff6c5c, 10));
+        }
     }
 
     &:hover,
     &:focus {
-        background-position: 0% 0%;
+        background: darken($blue, 10);
     }
 
     &.w-100 {
