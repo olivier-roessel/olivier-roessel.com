@@ -38,6 +38,7 @@
     }
 
     .slider-arrow {
+        position: -webkit-sticky;
         position: sticky;
         top: calc(50% - 30px);
         right: 0px;
