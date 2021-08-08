@@ -82,6 +82,7 @@
         transition: all 0.2s;
         overflow: hidden;
         z-index: 1;
+        user-select: none;
 
         h3 {
             margin: 0px 0px 10px;
@@ -141,6 +142,8 @@
 
         .btn {
             display: flex;
+            justify-content: center;
+            align-items: center;
             margin-bottom: 0px;
         }
     }
