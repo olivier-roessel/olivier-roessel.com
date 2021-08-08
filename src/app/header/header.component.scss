@@ -129,15 +129,6 @@
 
         @media (prefers-color-scheme: dark) {
             .menu-item {
-                color: $white;
-
-                &:hover,
-                &:focus {
-                    &::after {
-                        background-color: $white;
-                    }
-                }
-
                 &.active {
                     color: $white;
 
@@ -299,5 +290,9 @@
 
     @media (max-width: 575px) {
         display: flex;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $grey-dark;
     }
 }
