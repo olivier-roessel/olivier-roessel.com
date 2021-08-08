@@ -138,6 +138,7 @@ h2 {
     .icon svg {
         height: 60px;
         margin-right: 12px;
+        fill: currentColor;
     }
 
     @media (max-width: 575px) {
@@ -221,7 +222,7 @@ a {
     &:hover,
     &:focus {
         background: darken($blue, 10);
-        filter: drop-shadow(0px 5px 5px $black-transparent);
+        filter: drop-shadow(0px 0px 5px $black-transparent);
     }
 
     &.w-100 {
@@ -312,4 +313,25 @@ iframe {
 
 .jc-center {
     justify-content: center;
+}
+
+/* Dark theme */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: $black;
+        color: $white;
+    }
+
+    .card {
+        background-color: $grey;
+    }
+
+    .btn {
+
+        &:hover,
+        &:focus {
+            filter: drop-shadow(0px 0px 5px $white-transparent);
+        }
+    }
 }

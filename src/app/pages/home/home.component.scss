@@ -145,6 +145,11 @@
             justify-content: center;
             align-items: center;
             margin-bottom: 0px;
+
+            &:hover,
+            &:focus {
+                filter: drop-shadow(0px 5px 5px $black-transparent);
+            }
         }
     }
 }

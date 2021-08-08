@@ -13,6 +13,10 @@
             margin: 0px;
             text-align: center;
         }
+
+        @media (prefers-color-scheme: dark) {
+            background-color: $grey;
+        }
     }
 
     @media (max-width: 575px) {
