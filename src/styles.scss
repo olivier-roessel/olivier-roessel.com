@@ -352,6 +352,14 @@ iframe {
         color: $white;
     }
 
+    ::-webkit-scrollbar-thumb {
+        background-color: $grey;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: $grey-semi-light;
+    }
+
     .card {
         background-color: $grey-dark;
     }
