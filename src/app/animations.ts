@@ -5,7 +5,8 @@ export const slideInAnimation = trigger('routeAnimation', [
         style({
             position: 'relative',
             height: '100vh',
-            overflow: 'hidden'
+            overflow: 'hidden',
+            boxSizing: 'border-box'
         }),
         query(':enter, :leave', [
             style({
@@ -26,7 +27,8 @@ export const slideInAnimation = trigger('routeAnimation', [
         style({
             position: 'relative',
             height: '100vh',
-            overflow: 'hidden'
+            overflow: 'hidden',
+            boxSizing: 'border-box'
         }),
         query(':enter, :leave', [
             style({
