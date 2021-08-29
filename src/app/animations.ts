@@ -2,7 +2,11 @@ import { trigger, transition, style, query, animateChild, group, animate } from 
 
 export const slideInAnimation = trigger('routeAnimation', [
     transition('home => projects, projects => contact, contact => cv, home => contact, home => cv, projects => cv', [
-        style({ position: 'relative' }),
+        style({
+            position: 'relative',
+            height: '100vh',
+            overflow: 'hidden'
+        }),
         query(':enter, :leave', [
             style({
                 position: 'absolute',
@@ -19,7 +23,11 @@ export const slideInAnimation = trigger('routeAnimation', [
         query(':enter', animateChild())
     ]),
     transition('projects => home, contact => projects, cv => contact, contact => home, cv => home, cv => projects', [
-        style({ position: 'relative' }),
+        style({
+            position: 'relative',
+            height: '100vh',
+            overflow: 'hidden'
+        }),
         query(':enter, :leave', [
             style({
                 position: 'absolute',
