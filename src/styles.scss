@@ -23,14 +23,6 @@ body {
     background: transparent;
 }
 
-::-webkit-scrollbar-track-piece:start {
-    background: transparent;
-}
-
-::-webkit-scrollbar-track-piece:end {
-    background: transparent;
-}
-
 ::-webkit-scrollbar-thumb {
     background-color: $grey-semi-light;
     border-radius: 20px;
