@@ -16,6 +16,7 @@ export class AppComponent {
     if (environment.production) {
       this.addClarity();
     }
+    this.addMicrodata();
   }
 
   addClarity() {
@@ -27,5 +28,33 @@ export class AppComponent {
 
   getAnimationData(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
+  }
+
+  addMicrodata() {
+    let script = document.createElement('script');
+    script.type = "text/javascript";
+    let schema =
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Strasbourg",
+        "addressRegion": "Alsace",
+        "postalCode": "67100",
+        "streetAddress": "51, presqu'île André Malraux"
+      },
+      "email": "mailto:olivier.roessel@outlook.com",
+      "image": "https://olivier-roessel.com/assets/img/profile.webp",
+      "jobTitle": "Développeur web front-end",
+      "name": "Olivier Roessel",
+      "givenName": "Olivier",
+      "familyName": "Roessel",
+      "gender": "https://schema.org/Male",
+      "telephone": "(+33)786072924",
+      "url": "https://olivier-roessel.com/"
+    };
+    script.innerHTML = JSON.stringify(schema);
+    document.head.prepend(script);
   }
 }
