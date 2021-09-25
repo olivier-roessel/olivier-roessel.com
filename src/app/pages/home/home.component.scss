@@ -128,6 +128,7 @@
             height: 100%;
             object-fit: cover;
             object-position: center;
+            transition: all 0.3s;
             z-index: -1;
         }
 
@@ -196,6 +197,16 @@
             height: 100%;
             background: linear-gradient(180deg, transparent, $black-transparent, $black);
             z-index: -1;
+        }
+
+        .btn {
+
+            &:hover,
+            &:focus {
+                +.cover {
+                    transform: scale(1.05);
+                }
+            }
         }
     }
 }
