@@ -340,7 +340,7 @@ iframe {
 
 @media (prefers-color-scheme: dark) {
     body {
-        background: $black;
+        background: $deep-black;
         color: $white;
     }
 
@@ -353,7 +353,7 @@ iframe {
     }
 
     .card {
-        background-color: $grey-dark;
+        background-color: $black;
     }
 
     .btn {
@@ -366,7 +366,7 @@ iframe {
 
     iframe {
         @media (max-width: 575px) {
-            background-color: $grey-dark;
+            background-color: $black;
         }
     }
 }
