@@ -18,6 +18,10 @@
         padding: 10px 0px;
         width: 100%;
         box-sizing: border-box;
+
+        @media (max-width: 575px) {
+            flex-direction: column;
+        }
     }
 
     .card {
@@ -104,6 +108,13 @@
                 +.cover {
                     transform: scale(1.05);
                 }
+            }
+        }
+
+        @media (max-width: 575px) {
+            +.card {
+                margin-left: 0px;
+                margin-top: 20px;
             }
         }
     }
