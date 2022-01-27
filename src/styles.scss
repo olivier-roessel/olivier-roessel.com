@@ -129,6 +129,15 @@ body {
         margin-right: 5px;
     }
 
+    &.card {
+        font-size: 16px;
+
+        i {
+            margin-right: 12px;
+            font-size: 25px;
+        }
+    }
+
     @media (max-width: 575px) {
         justify-content: center;
         text-align: center;
@@ -305,6 +314,10 @@ a {
                 opacity: 1;
             }
         }
+    }
+
+    &:not([href]) {
+        cursor: not-allowed;
     }
 }
 

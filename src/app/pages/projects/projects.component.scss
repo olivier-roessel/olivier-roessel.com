@@ -1,0 +1,110 @@
+@import '~src/assets/css/variables';
+
+*::selection {
+    background: $green;
+    color: $white;
+}
+
+.row-projects {
+    position: relative;
+    flex-direction: column;
+    margin: 20px 0px;
+    padding: 0px;
+    list-style: none;
+
+    .col {
+        display: flex;
+        flex-shrink: 0;
+        padding: 10px 0px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        width: 100%;
+        min-height: 390px;
+        padding: 50px;
+        box-sizing: border-box;
+        color: $white;
+        transition: all 0.2s;
+        overflow: hidden;
+        z-index: 1;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, $black-semi-transparent, $black);
+            z-index: -1;
+            transition: all 0.2s;
+        }
+
+        +.card {
+            margin-left: 20px;
+        }
+
+        h3 {
+            margin: 0px 0px 10px;
+            font-size: 30px;
+            line-height: 36px;
+        }
+
+        p {
+            margin: 10px 0px 20px;
+            font-size: 15px;
+            line-height: 22px;
+        }
+
+        h3,
+        p {
+            max-width: 500px;
+        }
+
+        .cover {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: all 0.3s;
+            z-index: -1;
+        }
+
+        .social-icon {
+            height: 60px;
+        }
+
+        .text-group {
+            display: block;
+            width: 100%;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            margin-bottom: 0px;
+
+            &:hover,
+            &:focus {
+                filter: drop-shadow(0px 5px 5px $black-transparent);
+
+                +.cover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
