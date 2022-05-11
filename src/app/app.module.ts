@@ -10,6 +10,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { CvComponent } from './pages/cv/cv.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MemoireSourcesComponent } from './pages/memoire-sources/memoire-sources.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProjectsComponent,
     ContactComponent,
     CvComponent,
-    FooterComponent
+    FooterComponent,
+    MemoireSourcesComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +32,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       { path: 'projects', component: ProjectsComponent, data: { animation: 'projects' } },
       { path: 'contact', component: ContactComponent, data: { animation: 'contact' } },
       { path: 'cv', component: CvComponent, data: { animation: 'cv' } },
+      { path: 'memoire-sources', component: MemoireSourcesComponent, data: { animation: 'home' } },
       { path: '**', redirectTo: '', pathMatch: 'full' }
     ], { scrollPositionRestoration: 'enabled' })
   ],
