@@ -140,6 +140,18 @@
             &.cv.active::after {
                 background-color: $purple;
             }
+
+            &.memoire {
+                display: none;
+
+                &.active {
+                    display: flex;
+
+                    &::after {
+                        background-color: $blue;
+                    }
+                }
+            }
         }
 
         @media (prefers-color-scheme: dark) {
