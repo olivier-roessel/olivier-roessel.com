@@ -1,11 +1,33 @@
-a {
-    color: #6B9F25;
-    text-decoration: underline;
+@import '~src/assets/css/variables';
+
+a:not(.btn) {
+    position: relative;
+    color: $green;
+    text-decoration: none;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0px;
+        bottom: -2px;
+        display: block;
+        width: 0px;
+        height: 2px;
+        background-color: $green;
+        opacity: 0;
+        transition: all 0.2s;
+    }
 
     &:hover,
     &:focus {
-        color: #107C10;
+        color: darken($green, 10);
         text-decoration: none;
+
+        &::after {
+            width: 100%;
+            background-color: darken($green, 10);
+            opacity: 1;
+        }
     }
 }
 
