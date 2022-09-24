@@ -206,19 +206,19 @@
 .mobile-footer {
     display: none;
     position: fixed;
-    bottom: 8px;
+    bottom: 0px;
     left: 8px;
     justify-content: center;
     align-items: center;
     width: calc(100% - 16px);
     height: 80px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
     background-color: $grey-transparent;
     opacity: 1;
     overflow: hidden;
     user-select: none;
-    -webkit-backdrop-filter: blur(30px);
-    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
     z-index: 99;
 
     .mobile-menu {
