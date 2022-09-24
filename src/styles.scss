@@ -35,16 +35,29 @@ body {
 }
 
 *::selection {
-    background: $blue;
+    background: rgba($grey, 0.8);
     color: $white;
 }
 
 .main {
-    padding-top: 180px;
+    .container {
+        >h2:first-child {
+            margin-top: 0px;
+            padding-top: 40px;
+        }
+    }
+
+    &.fixed-header {
+        padding-top: 180px;
+
+        @media (max-width: 575px) {
+            padding-top: 220px;
+            padding-bottom: 80px;
+        }
+    }
 
     @media (max-width: 575px) {
-        padding-top: 220px;
-        padding-bottom: 80px;
+        padding-bottom: 96px;
     }
 }
 
@@ -168,6 +181,7 @@ ul {
     .col {
         .btn {
             width: 100%;
+            white-space: nowrap;
         }
     }
 }
@@ -205,8 +219,8 @@ a {
     border-radius: 10px;
     font-size: 16px;
     line-height: 16px;
-    background: $blue;
-    color: $white;
+    background: $grey-light;
+    color: $black;
     transition: all 0.2s;
     user-select: none;
 
@@ -216,53 +230,49 @@ a {
     }
 
     &.blue {
-        background: $blue;
 
         &:hover,
         &:focus {
-            background: darken($blue, 10);
+            background: $blue;
         }
     }
 
     &.green {
-        background: $green;
 
         &:hover,
         &:focus {
-            background: darken($green, 10);
+            background: $green;
         }
     }
 
     &.red {
-        background: $red;
 
         &:hover,
         &:focus {
-            background: darken($red, 10);
+            background: $red;
         }
     }
 
     &.purple {
-        background: $purple;
 
         &:hover,
         &:focus {
-            background: darken($purple, 10);
+            background: $purple;
         }
     }
 
     &.messenger {
-        background: linear-gradient(90deg, #0a7cff, #a10eeb, #ff5297, #ff6c5c);
 
         &:hover,
         &:focus {
-            background: linear-gradient(90deg, darken(#0a7cff, 10), darken(#a10eeb, 10), darken(#ff5297, 10), darken(#ff6c5c, 10));
+            background: linear-gradient(90deg, #0a7cff, #a10eeb, #ff5297, #ff6c5c);
         }
     }
 
     &:hover,
     &:focus {
-        background: darken($blue, 10);
+        background: $black;
+        color: $white;
         filter: drop-shadow(0px 0px 5px $black-transparent);
     }
 
@@ -330,25 +340,47 @@ a {
     &:not([href]) {
         cursor: not-allowed;
     }
+
+    @media (prefers-color-scheme: dark) {
+        background: $grey-dark;
+        color: $white;
+
+        &:hover,
+        &:focus {
+            background: $grey;
+        }
+    }
 }
 
 .description {
+    max-width: 575px;
     font-size: 16px;
     line-height: 26px;
-}
 
-iframe {
-    width: 100%;
-    height: calc(100vh - 180px);
-    border: none;
+    a {
+        position: relative;
 
-    @media (max-width: 575px) {
-        width: calc(100% - 40px);
-        height: calc(100vh - 340px);
-        margin: 20px;
-        border-radius: 10px;
-        background-color: $grey-light;
-        overflow: hidden;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0px;
+            bottom: -3px;
+            display: block;
+            width: 100%;
+            height: 4px;
+            border-radius: 4px;
+            background-color: currentColor;
+            transition: all 0.2s;
+        }
+
+        &:hover,
+        &:focus {
+            &::after {
+                left: calc(50% - 8px);
+                width: 16px;
+                opacity: 0.8;
+            }
+        }
     }
 }
 
@@ -385,12 +417,6 @@ iframe {
         &:hover,
         &:focus {
             filter: drop-shadow(0px 0px 5px $white-transparent);
-        }
-    }
-
-    iframe {
-        @media (max-width: 575px) {
-            background-color: $black;
         }
     }
 }

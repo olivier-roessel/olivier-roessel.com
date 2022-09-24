@@ -5,8 +5,9 @@
     position: relative;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin: 20px 0px;
+    margin: 30px 0px;
     padding: 0px;
+    border-radius: 10px;
     list-style: none;
     overflow: auto;
     scrollbar-width: none;
@@ -54,7 +55,7 @@
     .col {
         display: flex;
         flex-shrink: 0;
-        padding: 10px;
+        padding: 0px 10px;
         width: 250px;
         min-width: 250px;
         height: 300px;
