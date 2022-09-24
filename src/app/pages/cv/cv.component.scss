@@ -5,25 +5,34 @@
     color: $white;
 }
 
-iframe {
-    display: block;
-    width: 100%;
-    margin: 0px;
-    height: calc(100vh - 180px);
-    border: none;
+.iframe-container {
+    iframe {
+        display: block;
+        width: 100%;
+        margin: 0px;
+        height: calc(100vh - 180px);
+        border: none;
 
-    @media (max-width: 575px) {
-        width: calc(100% - 40px);
-        height: calc(100vh - 370px);
-        margin: 0px 20px;
-        border-radius: 10px;
-        background-color: $grey-light;
-        overflow: hidden;
+        @media (max-width: 575px) {
+            width: 100%;
+            height: calc(100vh - 450px);
+            border-radius: 10px;
+            background-color: $grey-light;
+            overflow: hidden;
+        }
+
+        @media (min-width: 576px) {
+            @media (prefers-color-scheme: dark) {
+                background-color: $black;
+            }
+        }
     }
 
-    @media (min-width: 576px) {
-        @media (prefers-color-scheme: dark) {
-            background-color: $black;
-        }
+    @media (max-width: 575px) {
+        display: block;
+        width: 100%;
+        padding: 50px 15px 0px;
+        box-sizing: border-box;
+        overflow: hidden;
     }
 }
