@@ -29,6 +29,7 @@
 .footer-banner {
     display: block;
     width: 100%;
+    height: auto;
     border-radius: 10px;
 
     @media (max-width: 575px) {
@@ -38,6 +39,7 @@
     &-mobile {
         display: none;
         width: 100%;
+        height: auto;
         border-radius: 10px;
 
         @media (max-width: 575px) {
