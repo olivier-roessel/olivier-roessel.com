@@ -97,6 +97,18 @@
             line-height: 18px;
         }
 
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, transparent, $black-transparent, $black-semi-transparent);
+            z-index: -1;
+        }
+
         &.instagram {
             background: linear-gradient(180deg, #FDA948, #F66748, #EC3653, #C13A9C);
         }

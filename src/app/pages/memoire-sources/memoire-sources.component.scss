@@ -2,7 +2,7 @@
 
 a:not(.btn) {
     position: relative;
-    color: $green;
+    color: darken($green, 30);
     text-decoration: none;
 
     &::after {
@@ -13,19 +13,19 @@ a:not(.btn) {
         display: block;
         width: 0px;
         height: 2px;
-        background-color: $green;
+        background-color: darken($green, 30);
         opacity: 0;
         transition: all 0.2s;
     }
 
     &:hover,
     &:focus {
-        color: darken($green, 10);
+        color: darken($green, 40);
         text-decoration: none;
 
         &::after {
             width: 100%;
-            background-color: darken($green, 10);
+            background-color: darken($green, 40);
             opacity: 1;
         }
     }

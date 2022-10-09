@@ -35,7 +35,7 @@ body {
 }
 
 *::selection {
-    background: rgba($grey, 0.8);
+    background: rgba($black, 0.8);
     color: $white;
 }
 
@@ -391,6 +391,10 @@ a {
 
 .jc-center {
     justify-content: center;
+}
+
+.mb-0 {
+    margin-bottom: 0px !important;
 }
 
 /* Dark theme */

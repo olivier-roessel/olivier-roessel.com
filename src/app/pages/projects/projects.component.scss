@@ -1,10 +1,5 @@
 @import '~src/assets/css/variables';
 
-*::selection {
-    background: $green;
-    color: $white;
-}
-
 .row-projects {
     position: relative;
     flex-direction: column;
@@ -112,7 +107,16 @@
         }
 
         @media (max-width: 575px) {
-            padding: 30px 20px;
+            padding: 25px;
+
+            p {
+                font-size: 17px;
+                line-height: 26px;
+            }
+
+            .btn {
+                width: 100%;
+            }
 
             +.card {
                 margin-left: 0px;
