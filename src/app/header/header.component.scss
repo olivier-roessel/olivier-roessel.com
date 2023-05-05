@@ -249,18 +249,27 @@
             margin: 0px;
             padding: 5px;
             font-size: 14px;
+            line-height: 18px;
             text-align: center;
-            color: $grey;
+            color: $black;
             transition: all 0.2s;
 
             i {
-                margin: 0px 0px 6px;
+                margin: 0px 0px 8px;
                 font-size: 30px;
+                transition: all 0.2s;
             }
 
             &.active {
+                line-height: 0px;
                 background-color: $black;
-                color: $white;
+                color: transparent;
+
+                i {
+                    margin: 0px;
+                    line-height: normal;
+                    color: $white;
+                }
             }
         }
     }
