@@ -338,6 +338,19 @@ a {
         }
     }
 
+    &.cookie {
+        display: inline-block;
+        margin: 0px auto 20px;
+        padding: 12px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1;
+        text-align: center;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+
     &:not([href]) {
         cursor: not-allowed;
     }
@@ -394,8 +407,28 @@ a {
     justify-content: center;
 }
 
+.ta-center {
+    text-align: center;
+}
+
 .mb-0 {
     margin-bottom: 0px !important;
+}
+
+/* Cookie consent */
+
+#cookie-manage {
+    display: none;
+}
+
+@media (max-width: 575px) {
+    #axeptio_overlay {
+        display: none;
+    }
+
+    #cookie-manage {
+        display: block;
+    }
 }
 
 /* Dark theme */
