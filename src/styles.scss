@@ -347,8 +347,13 @@ a {
         line-height: 1;
         text-align: center;
         border-radius: 10px;
-        cursor: pointer;
-        transition: transform 0.2s ease;
+
+        @media (min-width: 576px) {
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+            margin-bottom: 0px;
+        }
     }
 
     &:not([href]) {
@@ -413,22 +418,6 @@ a {
 
 .mb-0 {
     margin-bottom: 0px !important;
-}
-
-/* Cookie consent */
-
-#cookie-manage {
-    display: none;
-}
-
-@media (max-width: 575px) {
-    #axeptio_overlay {
-        display: none;
-    }
-
-    #cookie-manage {
-        display: block;
-    }
 }
 
 /* Dark theme */
