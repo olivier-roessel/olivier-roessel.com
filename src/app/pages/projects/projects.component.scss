@@ -27,7 +27,7 @@
         align-items: flex-start;
         width: 100%;
         min-height: 390px;
-        padding: 50px;
+        padding: 50px 50px 30px;
         box-sizing: border-box;
         color: $white;
         transition: all 0.2s;
@@ -68,6 +68,19 @@
             max-width: 575px;
         }
 
+        .row {
+            width: 100%;
+            margin: 0px;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            @media (max-width: 575px) {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+        }
+
         .cover {
             position: absolute;
             top: 0px;
@@ -90,11 +103,11 @@
         }
 
         .btn {
-            display: flex;
+            display: inline-flex;
             justify-content: center;
             align-items: center;
             width: auto;
-            margin-bottom: 0px;
+            margin-bottom: 20px;
 
             &:hover,
             &:focus {
