@@ -402,6 +402,15 @@ a {
                 opacity: 0.8;
             }
         }
+
+        &:active {
+            &::after {
+                left: calc(50% - 13px);
+                width: 26px;
+                transition-duration: 0.05s;
+                transition-delay: 0s;
+            }
+        }
     }
 }
 

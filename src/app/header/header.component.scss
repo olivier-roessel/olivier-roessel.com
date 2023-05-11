@@ -39,6 +39,7 @@
         font-weight: 800;
         line-height: 80px;
         text-transform: lowercase;
+        white-space: nowrap;
         color: $white;
     }
 
@@ -90,6 +91,17 @@
                 }
             }
 
+            @media (min-width: 576px) {
+                &:active {
+                    &::after {
+                        left: calc(50% - 13px);
+                        width: 26px;
+                        transition-duration: 0.05s;
+                        transition-delay: 0s;
+                    }
+                }
+            }
+
             &.active {
                 padding: 5px 0px 9px;
                 transition-delay: 0s;
@@ -99,6 +111,17 @@
                     width: 100%;
                     background-color: $white;
                     transition-delay: 0.2s;
+                }
+
+                @media (min-width: 576px) {
+                    &:active {
+                        &::after {
+                            left: 4px;
+                            width: calc(100% - 8px);
+                            transition-duration: 0.05s;
+                            transition-delay: 0s;
+                        }
+                    }
                 }
             }
 
@@ -153,7 +176,7 @@
             text-align: center;
 
             i {
-                margin: 0px 0px 5px;
+                margin: 0px 0px 8px;
             }
         }
     }
@@ -161,6 +184,10 @@
     @media (min-width: 576px) and (max-width: 767px) {
         .profile {
             display: none;
+        }
+
+        .title {
+            margin-left: 0px;
         }
     }
 
