@@ -1,1 +1,30 @@
 @import './src/assets/css/variables';
+
+.row-buttons {
+    .col {
+        flex-basis: unset;
+        width: 25%;
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .btn {
+                padding: 20px 25px;
+            }
+        }
+
+        @media (max-width: 991px) and (min-width: 576px) {
+            width: 50%;
+        }
+
+        @media (max-width: 575px) {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 991px) and (min-width: 576px) {
+        flex-direction: row;
+    }
+
+    @media (max-width: 575px) {
+        flex-direction: column;
+    }
+}
