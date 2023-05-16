@@ -130,10 +130,6 @@
 
                 &.active {
                     display: flex;
-
-                    &::after {
-                        background-color: $green;
-                    }
                 }
             }
         }
