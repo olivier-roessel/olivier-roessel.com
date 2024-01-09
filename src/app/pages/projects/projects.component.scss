@@ -137,4 +137,16 @@
             }
         }
     }
+
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 10px;
+    
+        >.btn:not(:last-child) {
+            margin-bottom: 0px;
+        }
+    }
 }
