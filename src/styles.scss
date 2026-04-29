@@ -35,7 +35,7 @@ body {
 }
 
 *::selection {
-    background: rgba($black, 0.8);
+    background: $primary;
     color: $white;
 }
 
@@ -130,7 +130,7 @@ body {
     display: block;
     padding: 25px;
     background-color: $grey-light;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .icon-line {
@@ -217,7 +217,7 @@ a {
     margin: 10px 0px;
     padding: 20px 45px;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 30px;
     font-size: 16px;
     line-height: 16px;
     background: $grey-light;
@@ -230,38 +230,6 @@ a {
         line-height: 16px;
     }
 
-    &.blue {
-
-        &:hover,
-        &:focus {
-            background: $blue;
-        }
-    }
-
-    &.green {
-
-        &:hover,
-        &:focus {
-            background: $green;
-        }
-    }
-
-    &.red {
-
-        &:hover,
-        &:focus {
-            background: $red;
-        }
-    }
-
-    &.purple {
-
-        &:hover,
-        &:focus {
-            background: $purple;
-        }
-    }
-
     &.messenger {
 
         &:hover,
@@ -272,9 +240,21 @@ a {
 
     &:hover,
     &:focus {
-        background: $black;
+        background: $primary;
         color: $white;
         filter: drop-shadow(0px 0px 5px $black-transparent);
+
+        &.green {
+            background-color: $green;
+        }
+
+        &.blue {
+            background-color: $blue;
+        }
+
+        &.pink {
+            background-color: $pink;
+        }
     }
 
     &.w-100 {
@@ -341,12 +321,12 @@ a {
     &.cookie {
         display: inline-block;
         margin: 0px auto 20px;
-        padding: 12px;
+        padding: 12px 18px;
         font-size: 14px;
         font-weight: 500;
         line-height: 1;
         text-align: center;
-        border-radius: 10px;
+        border-radius: 30px;
 
         @media (min-width: 576px) {
             position: fixed;
