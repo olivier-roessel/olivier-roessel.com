@@ -29,7 +29,7 @@ export class HomeComponent implements AfterViewInit {
     this.el1.nativeElement.querySelector(".slider-arrow").addEventListener('click', () => {
       this.el1.nativeElement.scroll({ left: this.pos1.left + 270, top: 0, behavior: 'smooth' });
     });
-    this.el2.nativeElement.querySelector(".slider-arrow").addEventListener('click', () => {
+    this.el2?.nativeElement.querySelector(".slider-arrow").addEventListener('click', () => {
       this.el2.nativeElement.scroll({ left: this.pos2.left + 270, top: 0, behavior: 'smooth' });
     });
     this.el1.nativeElement.addEventListener('mousedown', (e: any) => {
@@ -42,7 +42,7 @@ export class HomeComponent implements AfterViewInit {
       };
       this.active1 = true;
     });
-    this.el2.nativeElement.addEventListener('mousedown', (e: any) => {
+    this.el2?.nativeElement.addEventListener('mousedown', (e: any) => {
       this.speed2 = 0;
       this.pos2 = {
         left: this.el2.nativeElement.scrollLeft,
@@ -91,23 +91,27 @@ export class HomeComponent implements AfterViewInit {
 
   detectNoScroll(elements: ElementRef[]) {
     elements.forEach(el => {
-      if (el.nativeElement.clientWidth == el.nativeElement.scrollWidth) {
-        el.nativeElement.classList.add("no-scroll");
-      } else {
-        el.nativeElement.classList.remove("no-scroll");
+      if (el?.nativeElement) {
+        if (el.nativeElement.clientWidth == el.nativeElement.scrollWidth) {
+          el.nativeElement.classList.add("no-scroll");
+        } else {
+          el.nativeElement.classList.remove("no-scroll");
+        }
       }
     });
   }
 
   addScrollListeners(elements: ElementRef[]) {
     elements.forEach(el => {
-      el.nativeElement.addEventListener('scroll', () => {
-        if (el.nativeElement.scrollLeft >= el.nativeElement.scrollWidth - el.nativeElement.clientWidth - 10) {
-          el.nativeElement.classList.add("arrow-end");
-        } else {
-          el.nativeElement.classList.remove("arrow-end");
-        }
-      });
+      if (el?.nativeElement) {
+        el.nativeElement.addEventListener('scroll', () => {
+          if (el.nativeElement.scrollLeft >= el.nativeElement.scrollWidth - el.nativeElement.clientWidth - 10) {
+            el.nativeElement.classList.add("arrow-end");
+          } else {
+            el.nativeElement.classList.remove("arrow-end");
+          }
+        });
+      }
     });
   }
 }

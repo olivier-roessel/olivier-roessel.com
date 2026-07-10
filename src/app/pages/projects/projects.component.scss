@@ -148,5 +148,13 @@
         >.btn:not(:last-child) {
             margin-bottom: 0px;
         }
+
+        &:hover,
+        &:focus,
+        &:focus-within {
+            +.cover {
+                transform: scale(1.05);
+            }
+        }
     }
 }
